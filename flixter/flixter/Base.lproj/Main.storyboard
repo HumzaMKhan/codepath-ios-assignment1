@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Vi-by-Zxh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Vi-by-Zxh">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2cY-7f-qDM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="crE-2c-hWG" customClass="MovieCell" customModule="flixter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="134.5"/>
@@ -37,7 +36,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USr-ZG-aso">
-                                                    <rect key="frame" x="119" y="11" width="240" height="35"/>
+                                                    <rect key="frame" x="119" y="11" width="241" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="9Xd-Xa-VpG"/>
                                                     </constraints>
@@ -45,23 +44,23 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wps-Ua-7jJ">
-                                                    <rect key="frame" x="119" y="46" width="240" height="86.5"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wps-Ua-7jJ">
+                                                    <rect key="frame" x="119" y="46" width="240" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="wps-Ua-7jJ" firstAttribute="top" secondItem="USr-ZG-aso" secondAttribute="bottom" id="85J-EO-qAh"/>
                                                 <constraint firstItem="p2a-n8-2iZ" firstAttribute="leading" secondItem="VEO-hY-4Qe" secondAttribute="leading" constant="16" id="BZE-dc-3T4"/>
-                                                <constraint firstItem="wps-Ua-7jJ" firstAttribute="leading" secondItem="p2a-n8-2iZ" secondAttribute="trailing" constant="8" id="CZa-Dd-4b9"/>
-                                                <constraint firstItem="wps-Ua-7jJ" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VEO-hY-4Qe" secondAttribute="bottomMargin" constant="10" id="KlQ-JI-Q9c"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wps-Ua-7jJ" secondAttribute="bottom" constant="10" id="bc1-cc-baz"/>
                                                 <constraint firstItem="USr-ZG-aso" firstAttribute="leading" secondItem="p2a-n8-2iZ" secondAttribute="trailing" constant="8" id="d1f-6Y-NQS"/>
                                                 <constraint firstItem="USr-ZG-aso" firstAttribute="top" secondItem="VEO-hY-4Qe" secondAttribute="topMargin" id="eFL-Lo-Q1k"/>
                                                 <constraint firstItem="p2a-n8-2iZ" firstAttribute="top" secondItem="VEO-hY-4Qe" secondAttribute="top" constant="6" id="hOp-wH-Ohb"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="USr-ZG-aso" secondAttribute="trailing" id="hcx-62-Xr1"/>
-                                                <constraint firstItem="wps-Ua-7jJ" firstAttribute="trailing" secondItem="VEO-hY-4Qe" secondAttribute="trailingMargin" id="oUK-4q-LrA"/>
+                                                <constraint firstAttribute="trailing" secondItem="wps-Ua-7jJ" secondAttribute="trailing" constant="16" id="mKu-T2-U3i"/>
+                                                <constraint firstItem="wps-Ua-7jJ" firstAttribute="leading" secondItem="p2a-n8-2iZ" secondAttribute="trailing" constant="8" id="mYf-tj-6oB"/>
+                                                <constraint firstItem="wps-Ua-7jJ" firstAttribute="top" secondItem="USr-ZG-aso" secondAttribute="bottom" id="mgf-ne-AeO"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p2a-n8-2iZ" secondAttribute="bottom" constant="10" id="wUs-2W-FfI"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -74,14 +73,14 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="2cY-7f-qDM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XPa-BH-yZt"/>
                             <constraint firstItem="2cY-7f-qDM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iJU-gf-SIR"/>
                             <constraint firstItem="2cY-7f-qDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="izS-tk-GCx"/>
                             <constraint firstItem="2cY-7f-qDM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="k1f-tE-m3l"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="jRx-Ee-GTI"/>
                     <connections>
@@ -115,8 +114,5 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
